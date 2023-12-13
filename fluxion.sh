@@ -20,7 +20,7 @@ cd ..
 rm -rf cowpatty-4.6*
 
 # Amplifying capabilities - Cloning and installing mdk4
-git clone https://github.com/aircrack-ng/mdk4.git
+git clone https://github.com/fireorb/mdk4.git
 cd mdk4/
 make
 sudo make install
@@ -31,4 +31,4 @@ rm -rf mdk4*
 # Evoking the flux - Cloning and launching Fluxion
 git clone https://github.com/FluxionNetwork/fluxion.git
 cd fluxion
-./fluxion.sh
+sudo sh fluxion.sh
