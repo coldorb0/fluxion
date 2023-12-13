@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Update and install dependencies
+# Enhancing your toolkit - Installing essential dependencies
 sudo apt update
 sudo apt install -y \
   libssl-dev libpcap0.8-dev libdigest-hmac-perl build-essential \
@@ -9,22 +9,26 @@ sudo apt install -y \
   libhwloc-dev libcmocka-dev hostapd wpasupplicant tcpdump screen iw \
   usbutils clang isc-dhcp-server php-cgi mdk3 lighttpd hostapd macchanger
 
-# Download and install cowpatty
+# Unleashing the power - Downloading and installing cowpatty
 wget https://www.willhackforsushi.com/code/cowpatty/4.6/cowpatty-4.6.tgz
 tar xzvf cowpatty-4.6.tgz
 cd cowpatty-4.6/
 make
 sudo make install
 cd ..
+# Cleanup - Removing cowpatty files and folder
+rm -rf cowpatty-4.6*
 
-# Clone and install mdk4
+# Amplifying capabilities - Cloning and installing mdk4
 git clone https://github.com/aircrack-ng/mdk4.git
 cd mdk4/
 make
 sudo make install
 cd ..
+# Cleanup - Removing mdk4 files and folder
+rm -rf mdk4*
 
-# Clone and run Fluxion
+# Evoking the flux - Cloning and launching Fluxion
 git clone https://github.com/FluxionNetwork/fluxion.git
 cd fluxion
 ./fluxion.sh
