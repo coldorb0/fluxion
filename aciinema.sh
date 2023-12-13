@@ -1,1 +1,0 @@
-curl -sL https://asciinema.org/install | sh
