@@ -3,7 +3,7 @@
 # Enhancing your toolkit - Installing essential dependencies
 sudo apt update
 sudo apt install -y \
-  libssl-dev libpcap0.8-dev libdigest-hmac-perl build-essential \
+  php-cgi libssl-dev libpcap0.8-dev libdigest-hmac-perl build-essential \
   autoconf automake libtool pkg-config libnl-3-dev libnl-genl-3-dev \
   ethtool shtool rfkill zlib1g-dev libsqlite3-dev libpcre3-dev \
   libhwloc-dev libcmocka-dev hostapd wpasupplicant tcpdump screen iw \
